@@ -40,7 +40,7 @@ function getPageList(totalPages, page, maxLength) {
     .concat(range(totalPages - sideWidth + 1, totalPages));
 }
 
-$(function() {
+function() {
   // Number of items and limits the number of items per page
   var numberOfItems = $("#jar .content").length;
   var limitPerPage = 2;
@@ -77,7 +77,7 @@ $(function() {
             .text(item || "...")
         )
         .insertBefore("#next-page");
-    });
+    }
     return true;
   }
 
